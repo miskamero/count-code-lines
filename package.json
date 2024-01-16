@@ -1,6 +1,7 @@
 {
     "name": "countlines",
-    "version": "0.0.3",
+    "displayName": "Count Code Lines",
+    "version": "1.0.0",
     "publisher": "miskamero",
     "engines": {
         "vscode": "^1.61.0"
@@ -13,7 +14,15 @@
         "commands": [
             {
                 "command": "count-lines-of-code.runPowerShellScript",
-                "title": "Calculate lines of code"
+                "title": "Count Code Lines"
+            }
+        ],
+        "keybindings": [
+            {
+                "command": "count-lines-of-code.runPowerShellScript",
+                "key": "ctrl+alt+z",
+                "mac": "cmd+alt+z",
+                "when": "editorTextFocus"
             }
         ]
     },
@@ -33,5 +42,35 @@
         "extension.js",
         "runscript.js",
         "out/**/*"
+    ],
+    "keywords": [
+        "count",
+        "code",
+        "lines",
+        "loc",
+        "sloc",
+        "cloc",
+        "ncloc",
+        "vscode",
+        "extension",
+        "extension-pack",
+        "extension-pack-dependencies",
+        "extension-pack-extension",
+        "extension-pack-keymaps",
+        "extension-pack-language",
+        "count-lines-of-code",
+        "count-lines",
+        "count-code-lines",
+        "count-code",
+        "count-loc",
+        "count-sloc",
+        "count-cloc",
+        "count-ncloc"
+    ],
+    "license": "MIT",
+    "description": "Count Code Lines",
+    "icon": "extension/icon.png",
+    "images": [
+        "extension/icon.png"
     ]
 }

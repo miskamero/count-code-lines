@@ -1,0 +1,7 @@
+[
+    {
+        "key": "ctrl+alt+c",
+        "command": "count-lines-of-code.runPowerShellScript",
+        "when": "editorTextFocus"
+    }
+]

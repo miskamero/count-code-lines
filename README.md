@@ -1,10 +1,23 @@
-# README.md
+# Count Code Lines
 
-This file serves as the documentation for the "count-code-lines" project.
+![GitHub license](https://img.shields.io/github/license/Naereen/StrapDown.js.svg)
+
+_**NOTE:** Node.js and PowerShell is required to use this script._
+
+## Table of Contents
+
+- [Description](#description)
+- [Usage](#usage)
+  - [VSCode extension](#vscode-extension)
+  - [Keyboard shortcut](#keyboard-shortcut)
+- [License](#license)
+
+
 
 ## Description
 
-The "count-code-lines" project is a tool that allows you to count the number of lines in a given code file or directory.
+The "countlines" - extension for VSCode counts the lines of code in the current file and displays the result in a terminal window.
+
 Currently supported languages are:
 - Python
 - JavaScript
@@ -32,28 +45,16 @@ Currently supported languages are:
 
 ## Usage
 
-### VSCode shortcut example
+### VSCode extension
 
-1. Open VSCode
-2. Press `Ctrl + Shift + P`
-3. Type `Preferences: Open Keyboard Shortcuts (JSON)` and press `Enter`
-4. Add a new keybind as a shortcut for the script, here is an example:
+1. Press `Ctrl + Shift + P`
+2. Type `Count Code Lines`
+3. Press `Enter`
 
-```json
-[
-    {
-        "key": "ctrl+shift+z",
-        "command": "workbench.action.terminal.sendSequence",
-        "args": {
-            "text": "PowerShell -ExecutionPolicy Bypass -File \"C:\\SCRIPT\\PATH\\HERE\\CountLines.ps1\"\u000D"
-        },
-        "when": "editorTextFocus && !editorReadonly"
-    }
-]
-```
-Replace `C:\\SCRIPT\\PATH\\HERE\\CountLines.ps1` with the path to the script.
+### Keyboard shortcut
 
-You can replace `ctrl+shift+z` with any key combination you want.
+Alternatively, you can press `Ctrl + Alt + Z` to count the lines of code in the current file.
+The default keyboard shortcut can be changed in the VSCode settings.
 
 ## License
 
