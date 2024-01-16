@@ -1,0 +1,37 @@
+{
+    "name": "countlines",
+    "version": "0.0.3",
+    "publisher": "miskamero",
+    "engines": {
+        "vscode": "^1.61.0"
+    },
+    "main": "./extension.js",
+    "scripts": {
+        "package": "vsce package -o out/count-lines-of-code.vsix --yarn --npm"
+    },
+    "contributes": {
+        "commands": [
+            {
+                "command": "count-lines-of-code.runPowerShellScript",
+                "title": "Calculate lines of code"
+            }
+        ]
+    },
+    "activationEvents": [
+        "onCommand:count-lines-of-code.runPowerShellScript"
+    ],
+    "devDependencies": {
+        "@types/node": "^20.11.4",
+        "vscode": "^1.61.0"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/miskamero/count-code-lines.git"
+    },
+    "files": [
+        "CountLines.ps1",
+        "extension.js",
+        "runscript.js",
+        "out/**/*"
+    ]
+}
