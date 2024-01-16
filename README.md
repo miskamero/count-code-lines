@@ -53,7 +53,7 @@ Currently supported languages are:
 
 ### Keyboard shortcut
 
-Alternatively, you can press `Ctrl + Alt + Z` to count the lines of code in the current file.
+If you have the extenion installed, you can press `Ctrl + Alt + Z` to count the lines of code in the current file.
 The default keyboard shortcut can be changed in the VSCode settings.
 
 ## License
