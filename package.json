@@ -1,7 +1,7 @@
 {
     "name": "countcodelines",
     "displayName": "Count Code Lines",
-    "version": "1.1.0",
+    "version": "1.1.1",
     "publisher": "miskamero",
     "engines": {
         "vscode": "^1.61.0"
